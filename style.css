@@ -1,0 +1,144 @@
+.wrapper {
+  padding: 16px;
+}
+
+.container {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  max-width: 900px;
+  padding: 24px 32px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.list__head {
+  position: relative;
+}
+
+.list__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list__head-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.list__save {
+  margin-right: 10px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-group-item span {
+  cursor: pointer;
+  white-space: pre-line;
+  word-break: break-word;
+  line-height: 1.8rem;
+  width: 70%;
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.125); 
+}
+
+.list__edit {
+  width: 75%;
+  padding: 6px;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #A4A4A4;
+}
+
+.list__next {
+  display: flex;
+  justify-content: space-between;
+}
+
+.next__count {
+  padding: 6px 0;
+}
+
+.list__btn {
+  display: flex;
+  align-items: center;
+}
+
+.list__btn .btn,
+.list__btn .btn:focus,
+.btn-group .btn, 
+.btn-group .btn:focus,
+.btn-check:focus+.btn {
+  background: white;
+  border: none;
+  box-shadow: none;
+}
+
+.list__btn .btn:hover {
+  color: red;
+  font-weight: 700;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-group .btn {
+  height: 32px;
+  border-radius: 0;
+}
+
+.btn-group .btn:focus,
+.btn-check:focus+.btn {
+  border-top: 2px solid black;
+}
+
+@media (max-width: 768px) {
+  .list__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .list__head-btn {
+    position: relative;
+  }
+
+  .list__next {
+    flex-direction: column;
+    align-items:  center;
+  }
+}
+
+@media (max-width: 540px) {
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list__mt {
+    margin-top: 8px;
+  }
+
+  .btn-group .btn {
+    height : 38px;
+  }
+
+  .btn-group .btn:focus,
+  .btn-check:focus+.btn {
+    border-top:  none;
+    border-bottom: 2px solid black;
+  }
+}
